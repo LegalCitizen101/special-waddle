@@ -2,29 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fullscreen Video</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: black;
-      overflow: hidden;
-    }
-    video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-  </style>
+  <title>Video Player</title>
 </head>
-<body>
-  <video autoplay muted loop playsinline>
+<body style="margin:0; background:#000; display:flex; justify-content:center; align-items:center; height:100vh;">
+  <video autoplay style="max-width:90%; max-height:90%;">
     <source src="nyc.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
